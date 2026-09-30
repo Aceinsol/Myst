@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="black">
+    <style>
+    input {
+        width: 200px;
+        height: 30px;
+    }
+    button {
+        width: 100px;
+        height: 40px;
+    }
+    </style>
+    <script> 
+        function add()
+        {
+            var a,b,c;
+            a = Number(document.getElementById("value1").value);
+            b = Number(document.getElementById("value2").value);
+            var sum = a+b;
+            document.getElementById("answer").value = sum;
+
+        }
+        function sub()
+        {
+            var a,b,c;
+            a = Number(document.getElementById("value1").value);
+            b = Number(document.getElementById("value2").value);
+            var sum = a-b;
+            document.getElementById("answer").value = sum;
+
+        }
+        function diff()
+        {
+            var a,b,c;
+            a = Number(document.getElementById("value1").value);
+            b = Number(document.getElementById("value2").value);
+            var sum = a*b;
+            document.getElementById("answer").value = sum;
+
+        }
+        function div()
+        {
+            var a,b,c;
+            a = Number(document.getElementById("value1").value);
+            b = Number(document.getElementById("value2").value);
+            var sum = a/b;
+            document.getElementById("answer").value = sum;
+
+        }
+    </script>
+    <center>
+    <h1 align="center" style="color: white;">CALCULATOR</h1>
+    <input id="value1" type="text" placeholder="input 1" style="text-align: center;"><br><br>
+    <input id="value2" type="text" placeholder="input 2" style="text-align: center;"><br><br>
+    
+    <div class="button-row">
+            <button onclick="add()">+</button>
+            <button onclick="sub()">-</button>
+        </div><br>
+    <div class="button-row">
+            <button onclick="diff()">X</button>
+            <button onclick="div()">/</button>
+        </div><br>
+    <input id="answer" type="text" placeholder="answer" style="text-align: center;"><br>
+    </center>
+    
+</body>
+</html>
